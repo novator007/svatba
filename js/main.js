@@ -140,22 +140,6 @@
 
 	};
 
-
-	var testimonialCarousel = function(){
-		var owl = $('.owl-carousel-fullwidth');
-		owl.owlCarousel({
-			items: 1,
-			loop: true,
-			margin: 0,
-			responsiveClass: true,
-			nav: false,
-			dots: true,
-			smartSpeed: 800,
-			autoHeight: true,
-		});
-	};
-
-
 	var goToTop = function() {
 
 		$('.js-gotop').on('click', function(event){
@@ -210,7 +194,11 @@
 
 	// Parallax
 	var parallax = function() {
-		$(window).stellar();
+		$(window).stellar(
+			{
+				horizontalScrolling: false
+			}
+		);
 	};
 
 	
@@ -221,7 +209,6 @@
 		burgerMenu();
 		contentWayPoint();
 		dropdown();
-		testimonialCarousel();
 		goToTop();
 		loaderPage();
 		counter();

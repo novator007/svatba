@@ -122,10 +122,10 @@
                 minutes: 0,
                 seconds: 0,
                 words: {
-                    days: 'day',
-                    hours: 'hour',
-                    minutes: 'minute',
-                    seconds: 'second',
+                    days: 'den',
+                    hours: 'hodina',
+                    minutes: 'minuta',
+                    seconds: 'sekunda',
                     pluralLetter: 's'
                 },
                 plural: true,
@@ -214,21 +214,49 @@
                 }
 
                 if (parameters.plural) {
-                    dayWord = days > 1
-                        ? parameters.words.days + parameters.words.pluralLetter
-                        : parameters.words.days;
+                    if (days == 1) {
+                        dayWord = parameters.words.days;
+                    }
+                    if (days > 1 && days < 5) {
+                        dayWord = "dny";
+                    }
 
-                    hourWord = hours > 1
-                        ? parameters.words.hours + parameters.words.pluralLetter
-                        : parameters.words.hours;
+                    if (days > 4 || days < 1) {
+                        dayWord = "dní"
+                    }
 
-                    minuteWord = minutes > 1
-                        ? parameters.words.minutes + parameters.words.pluralLetter
-                        : parameters.words.minutes;
+                    if (hours == 1) {
+                        hourWord = parameters.words.hours;
+                    }
+                    if (hours > 1 && hours < 5) {
+                        hourWord = "hodiny";
+                    }
 
-                    secondWord = seconds > 1
-                        ? parameters.words.seconds + parameters.words.pluralLetter
-                        : parameters.words.seconds;
+                    if (hours > 4 || hours < 1) {
+                        hourWord = "hodin";
+                    }
+
+                    if (minutes == 1) {
+                        minuteWord = "minuta";
+                    }
+                    if (minutes > 1 && minutes < 5) {
+                        minuteWord = "minuty";
+                    }
+
+                    if (minutes > 4 || minutes < 1) {
+                        minuteWord = "minut";
+                    }
+
+                    if (seconds == 1) {
+                        secondWord = "sekunda";
+                    }
+                    if (seconds > 1 && seconds < 5) {
+                        secondWord = "sekundy";
+                    }
+
+                    if (seconds > 4 || seconds < 1) {
+                        secondWord = "sekund";
+                    }
 
                 } else {
                     dayWord = parameters.words.days;

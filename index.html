@@ -57,15 +57,12 @@
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
 							<li class="active"><a href="index.html">Domů</a></li>
-							<li><a href="index.html#pribeh">O nás dvou</a></li>
-							<li class="has-dropdown">
-								<a href="index.html#galerie">Svatební fotografie</a>
-								<ul class="dropdown">
-									<li><a href="#">HTML5</a></li>
-								</ul>
+							<li><a href="index.html#pribeh" onclick=" document.getElementById('pribeh').scrollIntoView();">O nás dvou</a></li>
+							<li>
+								<a href="index.html#galerie" onclick="document.getElementById('galerie').scrollIntoView();">Svatební fotografie</a>
 							</li>
-							<li><a href="index.html#dary">Svatební dary</a></li>
-							<li><a href="index.html#kontakt">Kontakt</a></li>
+							<li><a href="index.html#dary" onclick="document.getElementById('dary').scrollIntoView();">Svatební dary</a></li>
+							<li><a href="index.html#kontakt" onclick="document.getElementById('kontakt').scrollIntoView();">Kontakt</a></li>
 						</ul>
 					</div>
 				</div>
@@ -73,7 +70,7 @@
 			</div>
 		</nav>
 
-		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/polibek_promoce.jpg);"
+		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/polibek_promoce.jpg); background-position-x: 50%"
 		 data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
@@ -137,246 +134,278 @@
 						<h2>Harmonogram</h2>
 					</div>
 				</div>
-				<div class="row">
-					<div class="display-t">
-						<div class="display-tc">
-							<div class="col-md-12 ">
-								<div class="col-md-3 col-sm-2 text-center">
-									<div class="event-wrap animate-box row">
-										<div class="">
-											<i class="icon-clock"></i>
-											<span>12:00</span>
-										</div>
-										<div class="col-md-12">
-											<h3>Obřad</h3>
+				<div class="harmonogram-wrapper animate-box row" style="color: white">
+					<div class="col-xs-12">
+						<h3 style="color: white">Sobota</h3>
+					</div>
+					<div class="col-md-3 col-sm-6 text-center">
+						<div style="border-bottom: 1px solid white; margin-bottom: 10px; font-weight: bold">
+							<span>12:00</span>
+						</div>
+						<div>
+							<h3 style="color:white">Obřad</h3>
+							<p class="text-left" style="margin-left:10px;margin-right: 10px; font-size: 90%">Statek Břežany u Rakovníka
+								u velkého ořechu ve dvoře. Opozdilci zůstanou venku <i class="icon-emoji-happy"></i></p>
+						</div>
 
-											<p>Statek Břežany u Rakovníka</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-3 text-center">
-									<div class="event-wrap animate-box">
-										<h3>Slavnostní oběd s rodinou</h3>
-										<div>
-											<i class="icon-clock"></i>
-											<span>13:30</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-3 text-center">
-									<div class="event-wrap animate-box">
-										<h3>Krájení dortu</h3>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>16:00</span>
-										</div>
-										<p>Statek Břežany u Rakovníka</p>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-4 text-center">
-									<div class="event-wrap animate-box">
-										<h3>Tanec novomanželů a volná zábava</h3>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>17:00</span>
-										</div>
-										<p>Statek Břežany u Rakovníka</p>
-									</div>
-								</div>
-							</div>
+					</div>
+					<div class="col-md-3 col-sm-6 text-center">
+
+						<div style="border-bottom: 1px solid white; margin-bottom: 10px; font-weight: bold">
+							<span>13:30</span>
+						</div>
+						<div>
+							<h3 style="color:white">Oběd s rodinou</h3>
+							<p class="text-left" style="margin-left:10px;margin-right: 10px; font-size: 90%">Koná se ve velkém sále na
+								statku</p>
+						</div>
+
+					</div>
+					<div class="col-md-3 col-sm-6 text-center">
+						<div style="border-bottom: 1px solid white; margin-bottom: 10px; font-weight: bold">
+							<span>13:30</span>
+						</div>
+						<div>
+							<h3 style="color:white">Krájení dortu</h3>
+							<p class="text-left" style="margin-left:10px;margin-right: 10px; font-size: 90%">
+								Všechny přátele opět rádi přivítáme při nakrojení svatebního dortu
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 text-center">
+						<div style="border-bottom: 1px solid white; margin-bottom: 10px; font-weight: bold">
+							<span>13:30</span>
+						</div>
+						<div>
+							<h3 style="color:white">Tanec novomanželů</h3>
+							<p class="text-left" style="margin-left:10px;margin-right: 10px; font-size: 90%">
+								Náš první společný tanec a pak už jen zábava
+							</p>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
 
-		<div id="fh5co-event" class="fh5co-bg fh5co-section-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<span>Kde se svatba koná</span>
-						<h2>Statek Břežany u Rakovníka</h2>
+				<div class="harmonogram-wrapper animate-box row" style="color: white; margin-top: 30px">
+					<div class="col-xs-12">
+						<h3 style="color: white">Neděle</h3>
 					</div>
-				</div>
-				<div>
-					<h2>
-						Parkování
-					</h2>
-
-				</div>
-				<div>
-					<h2>
-						Mapa
-					</h2>
-					<p>Spani v prirode a ve spacaku</p>
-				</div>
-				<div>
-					<h2>
-						Co sebou
-					</h2>
-					<p>Dobrou náladu, spacák, deštník, gumáky a pláštěňku</p>
-					<p>Jsme na statku tak prosime hlavne slecny a damy at na to pamatuji pri vyberu obuvy. Take doufame ze nas ceka
-						teple jarni pocasi ale s nasim stestim bude urcite prset</p>
-				</div>
-			</div>
-		</div>
-
-		<div id="fh5co-couple-story">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<h2 id="pribeh">Náš příběh</h2>
-						<p>Jak to všechno začalo</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 col-md-offset-0">
-						<ul class="timeline animate-box">
-							<li class="animate-box">
-								<div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">První seznámení</h3>
-										<span class="date">December 25, 2015</span>
-									</div>
-									<div class="timeline-body">
-										<p>Poprvé jsem se potkali tradičně na plese. Tolik tradiční již nebylo, že jsme si vůbec nepadli do oka.
-											Naštěstí další setkání proběhlo již zdárněji a celý příběh tak neskončil jedinou kapitolou.
-										</p>
-									</div>
-								</div>
-							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">První rande</h3>
-										<span class="date">December 28, 2015</span>
-									</div>
-									<div class="timeline-body">
-										<p>Začali jsme spolu běhat a to že to Lukáš Myslí vážně jsem poznala, když mi po uběhnutí 8 kilometrů dal
-											první zpocený polibek</p>
-									</div>
-								</div>
-							</li>
-							<li class="animate-box">
-								<div class="timeline-badge" style="background-image:url(images/zasnuby.jpg);"></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Zasnoubení</h3>
-										<span class="date">Srpen, 2018</span>
-									</div>
-									<div class="timeline-body">
-										<p>Přesto, že Martinka již ani nedoufala, protože nám do konce dovolené zbývalo jen pár dní, tak jsem na
-											ostrově Skye ve Skotsku poklekl
-											na jedno koleno a požádal svou milovanou o ruku.
-										</p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="fh5co-services" class="fh5co-section-gray">
-			<div class="container">
-
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2 id="dary">Svatební dary</h2>
-						<p>
-							Naši milí svatební hosté, není třeba dávat nám svatební dary ani peníze, největším darem pro nás bude, že nás
-							doprovodíte při tak významném okamžiku.
-							Domácnost máme celkem vybavenou, snad jen pár věcí, které by se nám hodily, nabízíme pro inspiraci :)
-						</p>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-8 col-xs-12">
-						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-							<span class="icon">
-								<i class="icon-heart2"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Dóza na máslo/máselnička</h3>
-								<p>Porcelánové jsou sice pěkné, ale těžké, raději plastovou nebo nerezovou, třeba takovou (<a href="https://eshop.tescoma.cz/maslenka-grandchef?pos=3">odkaz</a>)
-								</p>
-							</div>
-							<span class="icon">
-								<i class="icon-heart2"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Rýžovar</h3>
-								<p>Žijeme zdravě</p>
-							</div>
-							<span class="icon">
-								<i class="icon-heart2"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Zapékací mísa</h3>
-								<p>Třeba skleněná s víkem </p>
-							</div>
-							<span class="icon">
-								<i class="icon-heart2"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Pomalý hrnec</h3>
-								<p>Komu by se nelíbilo ráno zapnout maso a večer po práci vás přivítá vůně dobré večeře</p>
-							</div>
-							<span class="icon">
-								<i class="icon-heart2"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Prázdná kuchařka/zápisník na naše recepty</h3>
-								<p>Protože máme skvělé nápady a žádné místo kam si je uložit</p>
-							</div>
-							<span class="icon">
-								<i class="icon-heart2"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Blinkající kravička na mléko</h3>
-								<p>Něco takového prostě musí mít doma každý (<a href="https://www.keramikashop.cz/keramika-na-vas-stul/211-kravicka-na-mleko.html">odkaz</a>)</p>
-							</div>
-							<span class="icon">
-								<i class="icon-heart2"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Překapávač na kávu</h3>
-								<p>Vůně čerstvé kávy ráno vytáhne z postele i největšího ospalce. Nejlépe tento (<a href="https://www.cerstvakava.cz/256-chemex-classic-cm-6a-6-salku/"
-									 target="_blank">odkaz</a>)
-								</p>
-							</div>
-							<span class="icon">
-								<i class="icon-heart2"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>A jinak, znáte nás :)</h3>
-								<p>Máme rádi sport (jakýkoliv), divadla, muzikály, knihy, hudbu, rádi zkoušíme nové věci
-									(třeba únikovky), také se rádi flákáme, máme rádi dobrou kávu a dobrý rum. Nápadům na originální a
-									vlastnoruční
-									dary se meze nekladou, spíš naopak, nejvíc náš potěší maličkosti od srdce.
-								</p>
-							</div>
+					<div class="col-md-3 col-sm-6 text-center">
+						<div style="border-bottom: 1px solid white; margin-bottom: 10px; font-weight: bold">
+							<span>9:00</span>
+						</div>
+						<div>
+							<h3 style="color:white">Snídaně</h3>
+							<p class="text-left" style="margin-left:10px;margin-right: 10px; font-size: 90%">
+								V neděli ráno bude pro ubytované připravena snídaně
+							</p>
 						</div>
 					</div>
 
-					<div class="col-md-4 col-xs-12 animate-box" style="border: 1px solid #F14E95">
-						<p>
-							Pokud byste si přeci jen vybrali ze seznamu darů něco, co byste nám chtěli pořídit, prosím, dejte to vědět Míše,
-							pět máselniček nebo dva rýžovary neužijeme ;)
-						</p>
-						<p>
-							<span class="icon"><i class="icon-message"></i></span>
-							+420725959116 (SMS)<br />
-							<span class="icon"><i class="icon-email"></i></span> test@email.cz
-						</p>
-					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="fh5co-bg fh5co-section-gray" style="padding: 7em 0; clear: both">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Kde se svatba koná</span>
+					<h2>Statek Břežany u Rakovníka</h2>
+				</div>
+			</div>
+			<div>
+				<h2>
+					Místo
+				</h2>
+				<p>Svatba se koná na statku v malebné vesničce Břežany u Rakovníka (<a href="https://goo.gl/maps/RBBTeNgdR8U2"
+					 target="_blank">mapa</a>).
+					Celá svatba se bude konat na statku a není potřeba přejíždět nikam autem. Parkování bude na pozemku vedle statku,
+					kde je dostatek prostoru pro Všechny svatebčany.
+				</p>
+				<div class="hidden-sm hidden-xs">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d906.5996299599392!2d13.581588463348975!3d50.00665079848279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470a5a8a02bea103%3A0x69dd7b75c9e7f4a6!2zU3RhdGVrIELFmWXFvmFueQ!5e0!3m2!1scs!2scz!4v1553032779105"
+					 width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div>
+				<h2 style="margin-top: 3em">
+					Co je dobré vědět
+				</h2>
+				<p>Jsme na statku a obřad se bude konat venku. Prosím pamatujte na to při oblékání. Po zkušenostech z našich
+					společných dovolených je pravděpodobné, že bude alespoň chvíli pršet.
+				</p>
+				<p>
+
+					Pokud se chcete převléknout do slavnostního až na statku nebo se ubytovat ještě před obřadem, doražte prosím s
+					dostatečným předstihem.
+				</p>
+				<p>
+					Alkohol umí rozproudit zábavu, ale nic se nemá přehánět, proto jsme se rozhodli, že na svatbě nechceme žádný tvrdý
+					alkohol.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-couple-story">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2 id="pribeh">Náš příběh</h2>
+					<p>Jak to všechno začalo</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline animate-box">
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">První seznámení</h3>
+									<span class="date">6. Března, 2014</span>
+								</div>
+								<div class="timeline-body">
+									<p>Poprvé jsem se potkali tradičně na plese. Tolik tradiční již nebylo, že jsme si vůbec nepadli do oka.
+										Naštěstí další setkání proběhlo již zdárněji a celý příběh tak neskončil jedinou kapitolou.
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">První rande</h3>
+									<span class="date">10. Května, 2014</span>
+								</div>
+								<div class="timeline-body">
+									<p>Začali jsme spolu běhat a to že to Lukáš Myslí vážně jsem poznala, když mi po uběhnutí 8 kilometrů dal
+										první zpocený polibek</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/zasnuby.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Zasnoubení</h3>
+									<span class="date"> 24. Srpna, 2018</span>
+								</div>
+								<div class="timeline-body">
+									<p>Přesto, že Martinka již ani nedoufala, protože nám do konce dovolené zbývalo jen pár dní, tak jsem na
+										ostrově Skye ve Skotsku poklekl
+										na jedno koleno a požádal svou milovanou o ruku.
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-services" class="fh5co-section-gray">
+		<div class="container">
+
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2 id="dary">Svatební dary</h2>
+					<p>
+						Naši milí svatební hosté, není třeba dávat nám svatební dary ani peníze, největším darem pro nás bude, že nás
+						doprovodíte při tak významném okamžiku.
+						Domácnost máme celkem vybavenou, snad jen pár věcí, které by se nám hodily, nabízíme pro inspiraci :)
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8 col-xs-12">
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-heart2"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Dóza na máslo/máselnička</h3>
+							<p>Porcelánové jsou sice pěkné, ale těžké, raději plastovou nebo nerezovou, třeba takovou (<a target="_blank"
+								 href="https://eshop.tescoma.cz/maslenka-grandchef?pos=3">odkaz</a>)
+							</p>
+						</div>
+						<span class="icon">
+							<i class="icon-heart2"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Rýžovar</h3>
+							<p>Žijeme zdravě</p>
+						</div>
+						<span class="icon">
+							<i class="icon-heart2"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Zapékací mísa</h3>
+							<p>Třeba skleněná s víkem </p>
+						</div>
+						<span class="icon">
+							<i class="icon-heart2"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Pomalý hrnec</h3>
+							<p>Komu by se nelíbilo ráno zapnout maso a večer po práci vás přivítá vůně dobré večeře</p>
+						</div>
+						<span class="icon">
+							<i class="icon-heart2"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Prázdná kuchařka/zápisník na naše recepty</h3>
+							<p>Protože máme skvělé nápady a žádné místo kam si je uložit</p>
+						</div>
+						<span class="icon">
+							<i class="icon-heart2"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Blinkající kravička na mléko</h3>
+							<p>Něco takového prostě musí mít doma každý (<a href="https://www.keramikashop.cz/keramika-na-vas-stul/211-kravicka-na-mleko.html"
+								 target="_blank">odkaz</a>)</p>
+						</div>
+						<span class="icon">
+							<i class="icon-heart2"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Překapávač na kávu</h3>
+							<p>Vůně čerstvé kávy ráno vytáhne z postele i největšího ospalce. Nejlépe tento (<a href="https://www.cerstvakava.cz/256-chemex-classic-cm-6a-6-salku/"
+								 target="_blank">odkaz</a>)
+							</p>
+						</div>
+						<span class="icon">
+							<i class="icon-heart2"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>A jinak, znáte nás :)</h3>
+							<p>Máme rádi sport (jakýkoliv), divadla, muzikály, knihy, hudbu, rádi zkoušíme nové věci
+								(třeba únikovky), také se rádi flákáme, máme rádi dobrou kávu a dobrý rum. Nápadům na originální a
+								vlastnoruční
+								dary se meze nekladou, spíš naopak, nejvíc náš potěší maličkosti od srdce.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-xs-12 animate-box" style="border: 1px solid #F14E95">
+					<p>
+						Pokud byste si přeci jen vybrali ze seznamu darů něco, co byste nám chtěli pořídit, prosím, dejte to vědět Míše,
+						pět máselniček nebo dva rýžovary neužijeme ;)
+					</p>
+					<p>
+						<span class="icon"><i class="icon-message"></i></span>
+						+420725959116 (SMS)<br />
+						<span class="icon"><i class="icon-email"></i></span> test@email.cz
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 
 
@@ -404,7 +433,8 @@
 							<span class="icon">
 								<i class="icon-mail"></i>
 							</span>
-							<p>
+							<p style="margin-left: 100px">
+								rodina Nových<br />
 								Milotická 458/12 <br />
 								Praha 5 - Zličín <br />
 								155 21
@@ -414,7 +444,7 @@
 							<span class="icon">
 								<i class="icon-email"></i>
 							</span>
-							<p>
+							<p style="margin-left: 100px">
 								lukas@inovator.eu
 							</p>
 						</div>
