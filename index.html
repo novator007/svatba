@@ -534,19 +534,22 @@
 	<script src="js/main.js"></script>
 
 	<script>
-		var d = new Date('2019-05-04T12:00:00');
+		var d = new Date('2019-06-05T11:59:00+02:00');
 
 		// default example
 		simplyCountdown('.simply-countdown-one', {
-			year: d.getFullYear(),
-			month: d.getMonth() + 1,
-			day: d.getDate()
+			year: 2019,
+			month: 5,
+			day: 4,
+			hours: 14,
+            minutes: 0,
+            seconds: 0,
 		});
 
 		//jQuery example
 		$('#simply-countdown-losange').simplyCountdown({
 			year: d.getFullYear(),
-			month: d.getMonth() + 1,
+			month: d.getMonth(),
 			day: d.getDate(),
 			enableUtc: false
 		});
