@@ -16,6 +16,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -36,6 +37,9 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<script src="galleryscript/js/lightgallery.min.js"></script>
+	<link rel="stylesheet" href="galleryscript/css/lightgallery.css">
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -79,7 +83,7 @@
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
 								<h1>Martina a Lukáš</h1>
-								<h2>Budeme se brát</h2>
+								<h2>Jsme svoji</h2>
 								<div class="simply-countdown simply-countdown-one"></div>
 								<!-- <p><a href="#" class="btn btn-default btn-sm">Save the date</a></p> -->
 							</div>
@@ -214,7 +218,7 @@
 					<h2>Statek Břežany u Rakovníka</h2>
 				</div>
 			</div>
-			<div>
+			<div class="row">
 				<h2>
 					Místo
 				</h2>
@@ -223,9 +227,8 @@
 					Celá svatba se bude konat na statku a není potřeba přejíždět nikam autem. Parkování bude na pozemku vedle statku,
 					kde je dostatek prostoru pro všechny svatebčany.
 				</p>
-				<div class="hidden-sm hidden-xs">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d906.5996299599392!2d13.581588463348975!3d50.00665079848279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470a5a8a02bea103%3A0x69dd7b75c9e7f4a6!2zU3RhdGVrIELFmWXFvmFueQ!5e0!3m2!1scs!2scz!4v1553032779105"
-					 width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div class="hidden-sm hidden-xs col-md-8 col-md-offset-2 text-center">
+					<img style="width: 90%; height: 90%;" src="images/statek.jpg"/>
 				</div>
 			</div>
 			<div>
@@ -305,6 +308,19 @@
 								</div>
 							</div>
 						</li>
+						<li class="animate-box timeline-inverted">
+							<div class="timeline-badge" style="background-image:url(images/DSCN0555.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Svatba</h3>
+									<span class="date"> 4. Května, 2019</span>
+								</div>
+								<div class="timeline-body">
+									<p>Díky že jste si s námi užili náš velký den. 
+									</p>
+								</div>
+							</div>
+						</li>						
 					</ul>
 				</div>
 			</div>
@@ -318,138 +334,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2 id="dary">Svatební dary</h2>
 					<p>
-						Naši milí svatební hosté, není třeba dávat nám svatební dary ani peníze, největším darem pro nás bude, že nás
-						doprovodíte při tak významném okamžiku.
-						Domácnost máme celkem vybavenou, snad jen pár věcí, které by se nám hodily, nabízíme pro inspiraci :)
-					</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-8 col-xs-12">
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Dóza na máslo/máselnička</h3>
-							<p>Porcelánové jsou sice pěkné, ale těžké, raději plastovou nebo nerezovou, třeba takovou (<a target="_blank"
-								 href="https://eshop.tescoma.cz/maslenka-grandchef?pos=3">odkaz</a>)
-							</p>
-						</div>
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Rýžovar</h3>
-							<p>Žijeme zdravě</p>
-						</div>
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Zapékací mísa</h3>
-							<p>Třeba skleněná s víkem </p>
-						</div>
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Pomalý hrnec</h3>
-							<p>Komu by se nelíbilo ráno zapnout maso a večer po práci vás přivítá vůně dobré večeře</p>
-						</div>
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Prázdná kuchařka/zápisník na naše recepty</h3>
-							<p>Protože máme skvělé nápady a žádné místo kam si je uložit</p>
-						</div>
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Blinkající kravička na mléko</h3>
-							<p>Něco takového prostě musí mít doma každý (<a href="https://www.keramikashop.cz/keramika-na-vas-stul/211-kravicka-na-mleko.html"
-								 target="_blank">odkaz</a>)</p>
-						</div>
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Překapávač na kávu</h3>
-							<p>Vůně čerstvé kávy ráno vytáhne z postele i největšího ospalce. Nejlépe tento (<a href="https://www.cerstvakava.cz/256-chemex-classic-cm-6a-6-salku/"
-								 target="_blank">odkaz</a>)
-							</p>
-						</div>
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Skleněná váza</h3>
-							<p>Protože bude Martinka dostavát spoustu květin od svého manžela, hodila by se jí broušená váza do
-								obývacího pokoje.
-							</p>
-						</div>
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Konvička na zalévání květin</h3>
-							<p>Ani ne moc malou, ani ne moc velkou, zkrátka tak akorát.
-							</p>
-						</div>
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Povlečení</h3>
-							<p>Barevné a veselé povlečení pro krásné sny (např. <a taget=_blank href="https://1.bonami.cz/images/products/a5/ea/a5ea01541027602ce6ae9c4b8b639be3cb9a02a3-1000x1000.jpeg">tady</a>
-								nebo <a taget=_blank href="https://www.scanquilt.cz/povleceni/povleceni-klasik-design-4121">tady</a>).
-							</p>
-						</div>
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Karafa a skleničky na víno</h3>
-							<p> Pro romantické večery ve dvou nebo posezení s přáteli.
-							</p>
-						</div>
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Dobrodružná výprava za obzor</h3>
-							<p>
-								Milujeme cestování a poznávání nových míst a na naši první společnou dovolenou chceme vyrazit někam daleko. Už
-								máme připravenou cestovní truhličku, ale budeme rádi, když nám ji pomůžete naplnit.
-							</p>
-						</div>
-
-						<span class="icon">
-							<i class="icon-heart2"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>A jinak, znáte nás :)</h3>
-							<p>Máme rádi sport (jakýkoliv), divadla, muzikály, knihy, hudbu, rádi zkoušíme nové věci
-								(třeba únikovky), také se rádi flákáme, máme rádi dobrou kávu a dobrý rum. Nápadům na originální a
-								vlastnoruční
-								dary se meze nekladou, spíš naopak, nejvíc náš potěší maličkosti od srdce.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-xs-12 animate-box" style="border: 1px solid #F14E95">
-					<p>
-						Pokud byste si přeci jen vybrali ze seznamu darů něco, co byste nám chtěli pořídit, prosím, dejte to vědět Míše,
-						pět máselniček nebo dva rýžovary neužijeme ;)
-					</p>
-					<p>
-						<span class="icon"><i class="icon-message"></i></span>
-						+420725959116 (SMS)<br />
-						<span class="icon"><i class="icon-email"></i></span> michaelamlcuchova@seznam.cz
+						Děkujeme za krásné a originalní svatební dary.
 					</p>
 				</div>
 			</div>
@@ -464,7 +349,19 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<!-- <span>Svatební fotografie</span> -->
 					<h2 id="galerie">Svatební galerie</h2>
-					<p>Fotografie sem přidáme až náš velký den proběhne</p>
+					<p>Fotografie sem přidáme až náš velký den proběhne. Dáme sem jen ty nelepší, ostatní naleznete na google drive, kde je i snadno stáhnete.</p>
+					<p><a href="https://photos.google.com/share/AF1QipMKRuBy-mOs0w9BX7bvauVJ-eJd1NRAhzewcmpOdlEaQ3gBNzPJ1H1IRQ5gyoy_xQ?key=WS1la2o2c0M1eTRkR2NHZUFhTDdHQnNxa1NtM3pB" target="_blank" >Odkaz na album</a></p>
+					<div id="lightgallery">
+						<a href="images/gallery/DSCN0569.JPG">
+							<img src="images/thumbs/DSCN0569.JPG">
+						</a>
+						<a href="images/gallery/DSCN0593.JPG">
+							<img src="images/thumbs/DSCN0593.JPG">
+						</a>
+						<a href="images/gallery/DSCN0661.JPG">
+							<img src="images/thumbs/DSCN0661.JPG">
+						</a>
+					</div>
 				</div>
 			</div>
 
@@ -483,7 +380,7 @@
 								<i class="icon-mail"></i>
 							</span>
 							<p style="margin-left: 100px">
-								Lukáš Nový / Martina Heryšerová <br />
+								Lukáš a Martina Noví <br />
 								Milotická 458/12 <br />
 								Praha 5 - Zličín <br />
 								155 21
@@ -494,7 +391,8 @@
 								<i class="icon-email"></i>
 							</span>
 							<p style="margin-left: 100px">
-								lukas@inovator.eu
+								lukas@inovator.eu <br/>
+								email@martinanova.cz
 							</p>
 						</div>
 					</div>
@@ -553,6 +451,8 @@
 			day: d.getDate(),
 			enableUtc: false
 		});
+		
+	    lightGallery(document.getElementById('lightgallery'));
 	</script>
 
 </body>
